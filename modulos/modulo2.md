@@ -1,9 +1,6 @@
 # Modulo 2
 
-Perfecto 💪
-Vamos ahora con el **MÓDULO 2: Flujo básico de trabajo en Git**, donde aprenderás el **ciclo completo del uso de Git**, desde crear un repositorio hasta deshacer o mover cambios.
-
-[Regresar a la nota principal](./../readme.md)
+[Regresar a la nota principal](./../readme.md#-módulo-2-flujo-básico-de-trabajo-en-git)
 
 ---
 
@@ -268,6 +265,6 @@ git restore archivo.txt
 git reset --hard HEAD~1
 ```
 
-[Regresar a la nota principal](./../readme.md)
+[Regresar a la nota principal](./../readme.md#-módulo-2-flujo-básico-de-trabajo-en-git)
 
 > **Autor:** Fravelz

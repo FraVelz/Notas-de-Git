@@ -1,10 +1,7 @@
 
 # Modulo 1
 
-Perfecto 🔥
-Vamos a explicar **todo el Módulo 1: Introducción a Git** paso a paso, de forma **clara y práctica**, como si estuvieras aprendiendo desde cero.
-
-[Regresar a la nota principal](./../readme.md)
+[Regresar a la nota principal](./../readme.md#-módulo-1-introducción-a-git)
 
 ---
 
@@ -190,6 +187,6 @@ git show HEAD
 Working directory → git add → Staging area → git commit → Repository
 ```
 
-[Regresar a la nota principal](./../readme.md)
+[Regresar a la nota principal](./../readme.md#-módulo-1-introducción-a-git)
 
 > **Autor:** Fravelz
