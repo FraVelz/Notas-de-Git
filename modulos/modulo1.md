@@ -1,24 +1,46 @@
-
 # Modulo 1
-
-[Regresar a la nota principal](./../readme.md#-módulo-1-introducción-a-git)
 
 ---
 
-## 🎯 Objetivo
+## Temario
+
+- [Modulo 1](#modulo-1)
+  - [Temario](#temario)
+  - [Objetivo](#objetivo)
+  - [1. ¿Qué es Git y qué problema resuelve?](#1-qué-es-git-y-qué-problema-resuelve)
+  - [2. Diferencia entre Git y GitHub / GitLab / Bitbucket](#2-diferencia-entre-git-y-github--gitlab--bitbucket)
+  - [3. Tipos de control de versiones](#3-tipos-de-control-de-versiones)
+  - [4. Instalación y configuración inicial](#4-instalación-y-configuración-inicial)
+    - [Configurar nombre y correo](#configurar-nombre-y-correo)
+    - [Configurar el editor por defecto](#configurar-el-editor-por-defecto)
+    - [Ver tu configuración actual](#ver-tu-configuración-actual)
+    - [Archivo `.gitconfig`](#archivo-gitconfig)
+  - [5. Conceptos clave de Git](#5-conceptos-clave-de-git)
+    - [Repositorio](#repositorio)
+    - [Commit](#commit)
+    - [Branch (rama)](#branch-rama)
+    - [Merge (fusión)](#merge-fusión)
+    - [HEAD](#head)
+    - [Working directory / Staging area / Repository](#working-directory--staging-area--repository)
+
+[Regresar a la nota principal](./../readme.md#módulo-1-introducción-a-git)
+
+---
+
+## Objetivo
 
 Entender **qué es Git**, **para qué sirve** y **cómo funciona internamente**, para poder usarlo con confianza.
 
 ---
 
-## 1. 🧠 ¿Qué es Git y qué problema resuelve?
+## 1. ¿Qué es Git y qué problema resuelve?
 
 **Git** es un **sistema de control de versiones**.
 Sirve para **guardar los cambios de tu código o proyecto a lo largo del tiempo**, permitiéndote:
 
-* Ver qué cambió y cuándo.
-* Volver a versiones anteriores si algo se rompe.
-* Trabajar en equipo sin sobrescribir el trabajo de otros.
+- Ver qué cambió y cuándo.
+- Volver a versiones anteriores si algo se rompe.
+- Trabajar en equipo sin sobrescribir el trabajo de otros.
 
 👉 En otras palabras:
 Git **te permite tener un “historial” de tu proyecto**, como una máquina del tiempo.
@@ -30,7 +52,7 @@ Con Git puedes volver exactamente al código del día 1 con un solo comando.
 
 ---
 
-## 2. 🔄 Diferencia entre Git y GitHub / GitLab / Bitbucket
+## 2. Diferencia entre Git y GitHub / GitLab / Bitbucket
 
 | Herramienta                           | Qué es                                                                                                                    | Dónde se usa                  | Ejemplo                             |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | ----------------------------------- |
@@ -44,7 +66,7 @@ Con Git puedes volver exactamente al código del día 1 con un solo comando.
 
 ---
 
-## 3. ⚙️ Tipos de control de versiones
+## 3. Tipos de control de versiones
 
 | Tipo              | Cómo funciona                                                              | Ejemplo                                  | Desventaja                                                       |
 | ----------------- | -------------------------------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------------------- |
@@ -56,35 +78,35 @@ Con Git puedes volver exactamente al código del día 1 con un solo comando.
 
 ---
 
-## 4. 💻 Instalación y configuración inicial
+## 4. Instalación y configuración inicial
 
 Una vez instalado Git, debes configurarlo antes de usarlo.
 
-### 🔧 Configurar nombre y correo
+### Configurar nombre y correo
 
 Esto identifica quién hace los cambios (commits).
 
-```bash
+``` bash
 git config --global user.name "Tu Nombre"
 git config --global user.email "tuemail@ejemplo.com"
 ```
 
 > `--global` significa que esta configuración se aplicará para todos los proyectos del computador.
 
-### 📝 Configurar el editor por defecto
+### Configurar el editor por defecto
 
-```bash
+``` bash
 git config --global core.editor "nano"
 # O puedes usar "vim", "code --wait" (para VS Code), etc.
 ```
 
-### 📄 Ver tu configuración actual
+### Ver tu configuración actual
 
-```bash
+``` bash
 git config --list
 ```
 
-### 🧩 Archivo `.gitconfig`
+### Archivo `.gitconfig`
 
 Toda esta configuración se guarda en un archivo llamado `.gitconfig`, normalmente en tu carpeta de usuario:
 
@@ -96,14 +118,14 @@ Puedes abrirlo para ver o editar tus configuraciones.
 
 ---
 
-## 5. 🔍 Conceptos clave de Git
+## 5. Conceptos clave de Git
 
-### 🧱 Repositorio
+### Repositorio
 
 Es **la carpeta del proyecto** que Git está controlando.
 Se crea con:
 
-```bash
+``` bash
 git init
 ```
 
@@ -111,33 +133,33 @@ Esto genera una carpeta oculta `.git` donde Git guarda **todo el historial**.
 
 ---
 
-### 💬 Commit
+### Commit
 
 Un **commit** es como una **foto** o **instantánea** del estado del proyecto en un momento determinado.
 
 👉 Comandos:
 
-```bash
+``` bash
 git add archivo.txt   # Marca el archivo para guardar los cambios
 git commit -m "Descripción de lo que hiciste"
 ```
 
 Cada commit guarda:
 
-* Qué cambió
-* Cuándo cambió
-* Quién lo cambió
+- Qué cambió
+- Cuándo cambió
+- Quién lo cambió
 
 ---
 
-### 🌿 Branch (rama)
+### Branch (rama)
 
 Una **rama** es una **línea paralela de desarrollo**.
 
-* La rama principal se llama `main` o `master`.
-* Puedes crear otras ramas para probar cosas sin dañar la principal.
+- La rama principal se llama `main` o `master`.
+- Puedes crear otras ramas para probar cosas sin dañar la principal.
 
-```bash
+``` bash
 git branch nueva-rama
 git checkout nueva-rama
 ```
@@ -146,13 +168,13 @@ git checkout nueva-rama
 
 ---
 
-### 🔗 Merge (fusión)
+### Merge (fusión)
 
 **Merge** une los cambios de una rama con otra.
 
 Por ejemplo:
 
-```bash
+``` bash
 git checkout main
 git merge nueva-rama
 ```
@@ -161,19 +183,19 @@ git merge nueva-rama
 
 ---
 
-### 🎯 HEAD
+### HEAD
 
 **HEAD** apunta al **último commit actual** o a la rama en la que estás trabajando.
 
 > Piensa en HEAD como el “marcador” que indica **dónde estás parado** en el historial.
 
-```bash
+``` bash
 git show HEAD
 ```
 
 ---
 
-### 📂 Working directory / Staging area / Repository
+### Working directory / Staging area / Repository
 
 | Zona                     | Qué contiene                                     | Comando relacionado     |
 | ------------------------ | ------------------------------------------------ | ----------------------- |
@@ -187,6 +209,6 @@ git show HEAD
 Working directory → git add → Staging area → git commit → Repository
 ```
 
-[Regresar a la nota principal](./../readme.md#-módulo-1-introducción-a-git)
+[Regresar a la nota principal](./../readme.md#módulo-1-introducción-a-git)
 
 > **Autor:** Fravelz
